@@ -14,12 +14,6 @@
 
 /Raiz<br>
 |<br>
-|-->documentos<br>
-  &emsp;|-->Entrega 1<br>
-  &emsp;|-->Entrega 2<br>
-  &emsp;|-->Entrega 3<br>
-  &emsp;|-->Entrega 4<br>
-  	&emsp;&emsp;|Documentação.docx<br>
 |-->imagens<br>
 |-->src<br>
   &emsp;|-->Backend<br>
