@@ -1,0 +1,190 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'); */
+
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Header */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 2rem;
+    z-index: 2;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    gap: 3.5rem;
+    margin-top: 10px;
+}
+
+/* Animation Underlined */
+.navbar .links a{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.navbar .links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar .links a:hover::after {
+    width: 100%;
+}
+
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn{
+    background-color: #fdd935;
+    color: black;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.action_btn:hover{
+    scale: 1.05;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+
+/* Dropdown Menu */
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.dropdown_menu li{
+    font-size: 1.1rem;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu ul li a:hover{
+    color: #000;
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Initial Text  */
+section#home {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/images/header_img/lampada_bg.jpg');    
+    background-size: cover;
+    background-image: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+section#home h1{
+    font-size: 5rem;
+    color: #f6e24b;
+    letter-spacing: 2px solid #b30000;
+    padding-left: 5%;
+    font-weight: bold;
+    display: inline-block;
+    border-right: 3px solid;  /* Write Bar */
+    animation: blinkCursor 0.8s steps(1) infinite;  
+    height: 1.19em; 
+    overflow: hidden;
+    padding-right: 2px solid #b30000;
+}
+
+/* Writting Animation */
+@keyframes blinkCursor { 
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1080px) {
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media (max-width: 675px) {
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}

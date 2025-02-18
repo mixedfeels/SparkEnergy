@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="shortcut icon" href="../../public/faviconTeste.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../../src/css/formStyle.css">
+    <link rel="stylesheet" href="../../src/css/formResponsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <div class="container">
+        <div class="feedback-header box-default-form">
+            <h1>SparkConnect</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="form-container">
+            <div class="container-personalData box-default-form box-structure">
+                <div>
+                    <p>*Por favor preencher todo esse campo para fazer seu feedback. (Obrigatório)</p>
+                </div>
+
+                <form action="" class="mainForm">
+                    <div class="box-personalData">
+                        <div class="form-personalData">
+                            <label class="label-question">Nome Completo:</label>
+                            <div>
+                                <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Digite seu nome completo">
+                            </div>
+                        </div>
+
+                        <div class="form-personalData">
+                            <label class="label-question">E-mail:</label>
+                            <div>
+                                <input type="email" id="email" name="email" class="inputText-personalData" placeholder="exemplo@exemplo.com">
+                            </div>
+                        </div>
+
+                        <div class="form-personalData">
+                            <label class="label-question">Nome Social:</label>
+                            <div>
+                                <input type="text" name="nomeSocial"  id="nomeSocial" class="inputText-personalData"  placeholder="Digite seu nome social">
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="box-personalData2">
+                        <div id="div-uf" class="form-personalData">
+                            <label class="label-question">UF:</label>
+                            <div>
+                                <select name="uf" id="uf">
+                                    <option value="" hidden="">UF</option>
+                                    <option value="sp">SP</option>
+                                    <option value="rj">RJ</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div id="div-cidade" class="item form-personalData">
+                            <label class="label-question">Cidade:</label>
+                            <div>
+                                <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade">
+                            </div>
+                        </div>
+
+                        <div id="div-idade"  class="item form-personalData">
+                            <label class="label-question">Idade:</label>
+                            <div>
+                                <input type="number" name="idade" id="idade" min="18" max="100" placeholder="18">
+                            </div>
+                            <span>*min. 18 anos</span>
+                        </div>
+
+                        <div class="inputTel form-personalData">
+                            <label class="label-question">Telefone:</label>
+                            <div>
+                                <input type="tel" name="telefone" id="telefone" placeholder="(00) 00000-0000" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}">
+                            </div>
+                        </div>
+
+                        <div id="div-cel"  class="inputTel form-personalData">
+                            <label class="label-question">Celular:</label>
+                            <div>
+                                <input type="tel" name="celular" id="celular" placeholder="(00) 00000-0000" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+
+            <div class="container-feedback box-default-form box-structure">
+                <h1>Colabore com seu feedback nós fornecendo algumas informações </h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, eum unde? Quidem, est perspiciatis numquam nisi vel quas mollitia, delectus sequi ab minim</p>
+
+                <form action=""  class="mainForm">
+                     <div class="margin-feedbackForm">
+                        <label id="radio-labelQuestion" class="label-question">Voce é?</label>
+                        <div class="radio-group">
+                            <input type="radio" name="radioGroupForm" id="input1" class="radio" value="exemplo1">
+                            <label for="input1" class="label-radio">Exemplo 1</label>
+                        </div>  
+                        <div class="radio-group">
+                            <input type="radio" name="radioGroupForm" id="input2" class="radio" value="exemplo2">
+                            <label for="input2" class="label-radio">Exemplo 2</label>
+                        </div>  
+                        <div class="radio-group">
+                            <input type="radio" name="radioGroupForm" id="input3" class="radio" value="exemplo3">
+                            <label for="input3" class="label-radio">Exemplo 3</label>
+                        </div>  
+                        <div class="radio-group">
+                            <input type="radio" name="radioGroupForm" id="input4" class="radio"  value="exemplo4">
+                            <label for="input4" class="label-radio">Exemplo 4</label>
+                        </div>  
+                    </div>
+
+                    <div class="margin-feedbackForm">
+                        <div>
+                            <label class="label-question" for="inputTextTeste">input text</label>
+                            <input type="text" name="inputTextTeste" id="inputTextTeste" class="input-text" placeholder="Digite alguma coisa">
+                        </div>
+
+                        <div id="alert-noText" class="alert">
+                            Esse campo é obrigatório e precisa ser preenchido corretamente.
+                        </div>
+                    </div>
+                    
+                    <div class="margin-feedbackForm">
+                        <div>
+                            <label class="label-question" for="motivo-select">input select</label>
+                            <select name="inputSelectTeste" id="inputSelectTeste" class="input-select">
+                                <option value="" hidden="" selected disabled>Selecione uma opção</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                            </select>
+                        </div>
+
+                        <div id="alert-noSelect" class="alert">
+                            Esse campo é obrigatório e precisa ser preenchido corretamente.
+                        </div>
+                    </div>
+                </form>
+               
+
+                <div class="buttons-feedback">
+                    <div id="private-information">
+                        <i class="fa-regular fa-eye-slash"></i>
+                        <span id="private-span"> informção privada</span>
+                    </div>
+
+                    <div class="div-buttons">
+                        <button id="voltar-btn"><i class="fa-solid fa-arrow-left"></i>  Voltar</button>
+                        <button onclick="saveAndNavigate()" id="proximo-btn">Próximo passo  <i class="fa-solid fa-arrow-down"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-default-form box-structure box-noselect">
+                <h4>Conte a sua história</h4>
+                <p>Complete as etapas anteriores</p>
+            </div>
+
+            <div class="box-default-form box-structure box-noselect">
+                <h4>Anexo</h4>
+                <p>Complete as etapas anteriores</p>
+            </div>
+
+
+            <div id="publish" class="box-default-form box-structure">
+                <div class="div1-publish">
+                    <div class="div2-publish">
+                        <div class="publish-p">
+                            <p>Complete as etapas obrigatórias para postar o FeedBack.</p>
+                        </div>
+                        <div class="publish-btn">
+                            <button disabled="" >
+                                <span>Publicar FeedBack</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+
+    <script src="../../src/js/formulario-scripts/inputAlertForm.js" async></script>
+    <script src="../../src/js/formulario-scripts/importDadoForm.js"></script>
+</body>
+</html>

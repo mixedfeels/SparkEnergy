@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SparkWave</title>
+    <link rel="stylesheet" href="../src/css/headerStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">SparkWave</a></div>
+            <ul class="links">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="action_btn">Comece Agora</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div> 
+        </div>
+    
+        <div class="dropdown_menu">
+            <ul class="dropdown_links">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <li><a href="#" class="action_btn">Comece Agora</a></li>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1 id="dynamic-title"></h1>
+            <h2>Invista em um futuro mais verde e limpo para as próximas gerações.</h2>
+            <h2>Descubra como fazer parte dessa revolução energética.</h2> 
+            <h2>Juntos, podemos fazer a diferença!</h2>  
+        </section>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn') 
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+    
+    <script src="../src/js/headerScript.js"></script>
+</body>
+</html>

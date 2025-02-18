@@ -1,0 +1,239 @@
+
+.rend{
+    width: 30%;
+}
+
+.BOX1{
+    background-image: url("http://www.gamba.org.br/wp-content/uploads/2011/12/DSCN2712.jpg");
+    grid-area: box1;
+}
+
+.BOX2{
+    background-image: url("https://www.greenpeace.org/static/planet4-brasil-stateless/2023/01/741e59c0-01-1024x683.jpg");
+    grid-area: box2;
+}
+
+.BOX3{
+    background-image: url("https://www.dompixote.org/wp-content/uploads/2018/05/img2-300x300.gif");
+    grid-area: box3;
+}
+
+.BOX4{
+    background-image: url("https://www.ecologica.org.br/wp-content/gallery/bioernergia/Bioenergia-3.jpg");
+    grid-area: box4;
+}
+
+.BOX1, .BOX2, .BOX3, .BOX4{
+    text-align: justify;
+    transition: background-image 2s;
+}
+
+.ONG{
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    border-color: black;
+    border-style:solid;
+    margin: 10px;
+    box-shadow: 0 5px 10px black;
+    
+    width: 100%;
+    min-height: 100%;
+    text-shadow: 2px 2px 5px black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.boxA, .boxB{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center ;
+
+    width: 100%;
+}
+
+button{
+    background-color: rgb(99, 99, 184);
+    color: white;
+}
+
+.Next, .Back{
+    background-color: rgba(139, 139, 233,0);
+    color: white;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/assets/images/seta.png");
+    
+    border-style: none;
+    background-size: 100%;
+
+    margin: auto;
+
+    height: 60px;
+    width: 40px;
+}
+
+.Back{
+    grid-area: back;
+    transform:rotateZ(180deg)
+}
+
+.Next{
+    grid-area: next;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* Layout-Pessoas */
+
+.carrosel{
+    position: relative;
+
+    overflow:hidden;
+    grid-area: carr;
+}
+
+.carrosel-people{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;  
+    flex: none;
+}
+
+.people-aux{
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.people{
+height: 362px;
+  min-width: 350px;
+  border-radius: 20px;
+  border-color: black;
+  border-style: solid;
+  margin: 10px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  text-shadow: 2px 2px 5px black;
+}
+
+.people p{
+    text-align: justify;
+}
+
+.prev, .next{
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    
+    background-color: rgba(139, 139, 233,0);
+    color: white;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/assets/images/seta.png");
+    
+    border-style: none;
+    background-size: 100%;
+
+    margin: auto;
+
+    height: 6vh;
+    width: 3vw;
+}
+.prev{ transform: rotate(180deg) translateY(50%); left: 10px; }
+.next{ right: 10px;}
+
+/*Layout-Prof*/
+
+.layout-prof-aux{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.layout-prof-aux-1{
+    display: flex;
+    flex-direction: row;
+}
+
+.layout-prof-aux-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.prof{
+    border-radius: 20px;
+    border-color: black;
+    border-style:solid;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    
+
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    text-align: justify;
+
+    width: 45%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 83px 20px;
+}
+
+.prof h2 {
+    font-size: 2rem;
+}
+
+.prof p {
+    font-size:  1.3rem;
+}
+
+
+
+@media screen and (max-width: 1124px) {
+    .boxA{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxB{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ONG{
+        min-width: 100%;
+    }
+
+    .people-aux{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .layout-prof-aux-1{
+        flex-direction: column;
+    }
+    .layout-prof-aux-2{
+        flex-direction: column;
+    }
+}

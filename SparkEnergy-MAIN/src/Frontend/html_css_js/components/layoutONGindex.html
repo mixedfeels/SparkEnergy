@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/layoutONGstyle.css">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container"; style="display:flex; align-items: center; flex-direction: column;">
+        <div class="rend"style="margin: 0 auto; width: 90%;">
+            <div class="layout-ONGs" style="height: 500px;">
+                <h1 style="font-family:Arial, Helvetica, sans-serif">ONGs dedicadas às Energias Renováveis</h1>
+                <div class="layout-ONGs-GRID" style="display:flex; flex-direction: row; justify-content: space-between; align-items: center; height: 80%; border: 2px solid rgb(255, 0, 195); ">
+                    <div> <!--  justify-content: space-between; flex-direction: row; -->
+                        <button class="Back" onclick=BackVoltar()></button>
+                    </div>
+                    <div style="display:flex; height: 80%; border: 2px solid purple">
+                        <div class="boxA">
+                            <div class="ONG BOX1" id="BOX1" style="color:white">
+                                <h2 id="BOX1-h2">Gambá</h2>
+                                <p id="BOX1-p">A Organização Gambá distribuiu balas doces na rua como forma de provocação à reflexão sobre energia nuclear na Bahia.</p>
+                                <a target="_blank" style="text-align: center;"href=""><button id="BOX1-button">Confira!</button></a>
+                            </div>
+                        
+                            <div class="ONG BOX2" style="color:white">
+                                <h2>Greenpeace</h2>
+                                <p>Greenpeace protesta em plataforma petrolífera da Shell e recebe protesto de US$ 8,6 milhões.</p>
+                                <a target="_blank" style="text-align: center;"href=""><button>Confira!</button></a>
+                            </div>
+                        </div>
+
+                        <div class="boxB">
+                            <div class="ONG BOX3" style="color:white">
+                                <h2>Instituto Dom Pixote</h2>
+                                <p>O Instituto Dom Pixote intenta pioneiramente a instalação do biogestor israelense HomeBiogas® no Brasil.</p>
+                                <a target="_blank" style="text-align: center;"href=""><button>Confira!</button></a>
+                            </div>
+                        
+                            <div class="ONG BOX4" style="color:white">
+                                <h2>Instituto Ecológica</h2>
+                                <p>Instituto Ecológica empreita a inauguração de uma usina bioenergética de álcool e ração animal.</p>
+                                <a target="_blank" style="text-align: center;"href=""><button>Confira!</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="Next" onclick=NextAvancar()></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="layout-Pessoas" style="text-align: center; ">
+                <h1 style="font-family: Arial, Helvetica, sans-serif;">Pessoas Marcantes no Assunto de Energia Renovável</h1>
+                    <div class="carrosel">
+                        <div class="carrosel-people">
+                            <div class="people" style="background-image: url(https://th.bing.com/th/id/R.c0eb1e89b29fbe268b9820f5480ec433?rik=%2b7R1%2bxvnPpXEsw&pid=ImgRaw&r=0);">
+                                <h2>Carlos Nobre</h2>
+                                <p>Um dos climatologistas mais renomados do Brasil, Carlos Nobre tem sido uma voz ativa na promoção de energias renováveis e na luta contra as mudanças climáticas. Ele acredita que o Brasil pode ser 100% renovável até 2040.</p>
+                            </div>
+
+                            <div class="people" style="background-image: url(https://images.news9live.com/wp-content/uploads/2023/08/elon_musk_x_twitter_lawsuit_afp.jpg?w=1200&enlarge=true);background-size: cover;">
+                                <h2>Elon Musk</h2>
+                                <p>Fundador da Tesla e da SolarCity, Musk tem sido um grande defensor da energia solar e das baterias de armazenamento de energia, ajudando a popularizar essas tecnologias em escala global.</p>
+                            </div>
+
+                            <div class="people" style="background-image: url(https://images.marinelink.com/images/maritime/ristiana-figueres-executive-secretary-of-55606.jpg);background-size: cover;">
+                                <h2>Christiana Figueres</h2>
+                                <p>Ex-secretária executiva da Convenção-Quadro das Nações Unidas sobre a Mudança do Clima (UNFCCC), Figueres foi uma das principais arquitetas do Acordo de Paris, que visa reduzir as emissões globais de carbono.</p>
+                            </div>
+
+                            <div class="people" style="background-image: url(https://th.bing.com/th/id/R.84a0eb28da50f1e08c588a512ad40a2d?rik=RgAs7yftTlnAUg&riu=http%3a%2f%2fwww.gif.org.tr%2fimages%2fcontent%2ffatihbirol.jpg&ehk=z4aqH5xDUrjt1t%2fTkwmldXiGsv0xM9Tk8Ygx4DsjOqM%3d&risl=&pid=ImgRaw&r=0);background-size: cover;">
+                                <h2>Fatih Birol</h2>
+                                <p>Diretor executivo da Agência Internacional de Energia (IEA), Birol tem promovido a transição para energias limpas e renováveis em nível global.</p>
+                            </div>
+                            <!-- </div> -->
+                            <!-- <div style="display:flex"> -->
+                            <div class="people" style="background-image: url(https://th.bing.com/th/id/R.222764976abbb1d94369ea9096be6607?rik=mJAIytoX7iUsFA&pid=ImgRaw&r=0);background-size: cover;">
+                                <h2>Mariana Mazzucato</h2>
+                                <p>Economista e autora, Mazzucato tem defendido o papel do governo na inovação e no financiamento de tecnologias verdes, incluindo energias renováveis.</p>
+                            </div>
+
+                            <div class="people" style="background-image: url(https://a57.foxnews.com/a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2018/09/640/320/1862/1048/goreinternal649846.jpg?ve=1&tl=1?ve=1&tl=1);background-size: cover;">
+                                <h2>Al Gore</h2>
+                                <p>Ex-vice-presidente dos EUA, Gore tem sido uma das vozes mais influentes no combate às mudanças climáticas e na promoção de energias renováveis. Seu documentário "Uma Verdade Inconveniente" ajudou a sensibilizar milhões de pessoas sobre a urgência da transição energética.</p>
+                            </div>
+
+                            <div class="people" style="background-image: url(https://th.bing.com/th/id/R.058ef105bce1622d48a046d72b2d5820?rik=%2fKShsVWfS36BhQ&pid=ImgRaw&r=0);background-size: cover;">
+                                <h2>Greta Thunberg</h2>
+                                <p>Jovem ativista climática sueca, Thunberg chamou a atenção global para a crise climática e a necessidade urgente de reduzir o uso de combustíveis fósseis. Seu ativismo ajudou a mobilizar milhões de pessoas em apoio a energias renováveis e à sustentabilidade.</p>
+                            </div>
+
+                            <div class="people" style="color: black;background-image: url(https://th.bing.com/th/id/OIP.4rDEjsVbm125H8fGNwCngQHaFB?rs=1&pid=ImgDetMain);background-size: cover;">
+                                <h2>Rachel Kyte</h2>
+                                <p>Ex-CEO da Sustainable Energy for All (SEforALL) e reitora da Fletcher School, Rachel Kyte é uma defensora da transição energética global e da universalização do acesso à energia limpa. Ela também foi a representante especial do Secretário-Geral da ONU para Energia Sustentável.</p>
+                            </div>
+                        </div>
+                        <button class="prev"></button>
+                        <button class="next"></button>
+                    </div>
+            </div>
+
+            <div class="layout-prof" style="text-align: center; font-family: Arial, Helvetica, sans-serif; border: 2px solid black">
+                <h1>Profissões na Área de Energias Renováveis</h1>
+                <div style="">
+                    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                        <div class="prof" style="color: white;background-image: url(https://inap.com.br/wp-content/uploads/2022/04/tecnico-em-eletrotecnica-1-1024x542.jpg);">
+                            <h2>Tecnólogo em Sistemas Elétricos</h2>
+                            <p style="text-align: justify;">Responsável por projetar e efetuar manutenções em sistemas de geração e distribuição de energia. Com conhecimentos em tecnologias eólicas, solares e de biomassa, este profissional tem uma demanda crescente no mercado de trabalho.</p>
+                        </div>
+                        <div class="prof" style="color: white;background-image: url(https://i1.rgstatic.net/ii/profile.image/838001072562176-1576806433372_Q512/Leonardo-Selvenca.jpg);">
+                            <h2>Tecnólogo em Biocombustíveis</h2>
+                            <p style="text-align: justify;">Trabalha na área de pesquisa e desenvolvimento de biocombustíveis, atuando sobre conhecimentos em biotecnologia, química e processos industriais.</p>
+                        </div>
+                        <div class="prof" style="color: black;background-image: url(https://senaies.com.br/wp-content/uploads/2022/01/Engenheiro-Ambiental-scaled.jpg);">
+                            <h2>Engenheiro Ambiental</h2>
+                            <p style="text-align: justify;">Profissional que administra a implementação de projetos ecologicamente corretos. Atua sob o planejamento e desenvolvimento de infraestruturas para fontes renováveis como solar, eólica, hidrelétrica e biomassa.</p>
+                        </div>
+                        <div class="prof" style="color: black;font-weight: bold;background-image: url(https://www.laboneconsultoria.com.br/wp-content/uploads/2022/08/Principais-disciplinas-do-curso-de-Engenharia-H%C3%ADdrica.jpg);">
+                            <h2>Técnico em Hidrologia</h2>
+                            <p style="text-align: justify;">Responsável pela pesquisa e organização de informações que auxiliem na administração de recursos hídricos para posterior aplicação em hidrelétricas, irrigação e abastecimento.</p>
+                        </div>
+                        <div class="prof" style="color: black;background-image: url(https://www.undb.edu.br/hubfs/shutterstock_1155187792.jpg);background-size: auto;">
+                            <h2>Engenheiro de software</h2>
+                            <p style="text-align: justify;">Atuam no desenvolvimento de sistemas de monitoramento e previsão na produção das usinas elétricas.</p>
+                        </div>
+                        <div class="prof" style="color: black;background-image: url(https://th.bing.com/th/id/R.fcf4e83517a0e69767070bf6f4e4daba?rik=vaO2O0AI5wz10Q&pid=ImgRaw&r=0);">
+                            <h2>Especialista em Controle Ambiental</h2>
+                            <p style="text-align: justify;">Perito em análise e desenvolvimento de medidas ambientalmente corretas que ajudem usinas de energia renovável a mitigarem seus impactos ambientais.</p>
+                        </div>
+                        <div class="prof" style="color: white;background-image: url(https://network.grupoabril.com.br/wp-content/uploads/sites/4/2017/09/meioambiente.jpg?quality=70&strip=info);">
+                            <h2>Técnico em Geoprocessamento</h2>
+                            <p style="text-align: justify;">Analisa o potencial que uma determinada área tem para a instalação de uma espécie de geração de energia renováveis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/src/js/layoutONGscript.js"></script>
+</body>
+</html>

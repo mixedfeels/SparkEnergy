@@ -1,0 +1,153 @@
+#container-slider{
+    display:grid;
+    height: 100vh;
+    width: 100%;
+    background-color: #0E100F;
+    align-items: center;
+}
+.container-botaoupdown{
+    text-align: center;
+    width:13.2%;
+    height: fit-content;
+}
+.botao-up-down{
+    align-items: center;
+    position: static;
+    color: white;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(50,50,50,10);
+    border-color: transparent;
+    border-radius: 80px;
+    transition: 0.5s;
+}
+.botao-up-down:hover{
+    color: white;
+    background-color: rgba(80,80,80,10);
+    border-color: transparent;
+    transition: 0.2;
+}
+.botao-up-down:active{
+    color: white;
+    background-color: rgba(10,10,10,10);
+    border-color: transparent;
+}
+
+#slidehorizontal{
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: max-content;
+    gap: 10px;
+    height: fit-content;
+    border-color: #000000;
+    border-radius: 5px;
+    background-color: #0E100F;
+    align-items: center;
+}
+
+#slidehorizontal .boxenergia{
+    position: relative;
+    height: 80vh;
+    width: 90vw;
+    min-width: 500px;
+    border: 5px #FFFCE1 solid;
+    border-radius: 25px;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: 160px 100px 200px 20px;
+    row-gap:auto;
+}
+
+#slidehorizontal .boxenergia .pag-rael-titl-box{
+    font-size: 5em;
+    font-style: italic ;
+    color: #000000;
+    
+}
+
+#slidehorizontal .boxenergia .pag-rael-txt-box{
+    
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+
+#slidehorizontal .boxenergia:nth-child(1) {
+    background-image: 
+    linear-gradient(to bottom, hsla(0, 0%, 0%, 0), #B9C4C9),
+    url(../../assets/images/img/solar-box-bg.png);
+}
+
+#slidehorizontal .boxenergia:nth-child(2) {
+    background-image: 
+    linear-gradient(to bottom, hsla(0, 0%, 0%, 0), #B9C4C9),
+    url(../../assets/images/img/hidreletrica-box-bg.jpg);
+}
+#slidehorizontal .boxenergia:nth-child(3) {
+    background-image: 
+    linear-gradient(to bottom, hsla(0, 0%, 0%, 0), #B9C4C9),
+    url(../../assets/images/img/nuclear-box-bg.jpg);
+}
+#slidehorizontal .boxenergia:nth-child(4) {
+    background-image:
+    linear-gradient(to bottom, hsla(0, 0%, 0%, 0), #B9C4C9),
+    url(../../assets/images/img/eolica-box-bg.png);
+}
+#slidehorizontal .boxenergia:nth-child(5) {
+    background-image:
+    linear-gradient(to bottom, hsla(0, 0%, 0%, 0), #B9C4C9),
+    url(../../assets/images/img/marinha-box-bg.png);
+}
+#slidehorizontal .boxenergia:nth-child(6) {
+    background-image: 
+    linear-gradient(to bottom, hsla(0, 0%, 0%, 0), #B9C4C9),
+    url(../../assets/images/img/geotermica-box-bg.jpg);
+}
+#slidehorizontal .boxenergia:nth-child(7) {
+    background-image: 
+    linear-gradient(to bottom, hsla(0, 0%, 0%, 0), #B9C4C9),
+    url(../../assets/images/img/biomassa-box-bg.png);
+}
+#slidehorizontal .boxenergia .botao-pag-rael-boxenergia{
+    height: 30px;
+    width: 200px;
+    background: #FFFCE1;
+    border:#000000 solid 3px;
+    color: #000000;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+#slidehorizontal .boxenergia .botao-pag-rael-boxenergia:hover{
+    background-color:#0E100F;
+    border-color: #FFFCE1;
+    color: #BBBAA6;
+}
+#slidehorizontal .boxenergia .botao-pag-rael-boxenergia:active{
+    color:white;
+    background-color:#0E100F;
+    border-color: #B9C4C9;
+}
+
+.imgboxespagrael{
+    width:150px;
+    height:150px;
+}
+
+
+
+
+
+
+
+

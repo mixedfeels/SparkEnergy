@@ -1,0 +1,73 @@
+.about{
+    background: url("../../assets/images/about_img/about-bg.jpg") no-repeat left;
+    background-size: 60%;
+    background-color: #040403;
+    overflow: hidden;
+    padding: 100px 0px;
+    font-family: "Open Sans", sans-serif;
+
+}
+.inner-section{
+    width: 55%;
+    float: right; 
+    background-color: #fdd935;
+    padding: 110px;
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
+}
+.inner-section h1{
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: Roboto, sans-serif;
+}
+.text{
+    font-size: 1.2rem;
+    color: black;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.skills button{
+    font-weight: 800;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    border: none;
+    padding: 8px;
+    width: 200px;
+    background-color: black;
+    color: #fdd935;
+    cursor: pointer;
+}
+.skills button:hover{
+    transition: 1s;
+    background-color: black;
+    color: #fdd935;
+}
+@media screen and (max-width: 1200px){
+    .inner-section{
+        padding: 80px;
+    }
+}
+@media screen and (max-width:1000px){
+     .about{
+        background-size: 100%;
+        padding: 100px 40px;
+     }
+     .inner-section{
+        width: 100%; 
+     }
+}
+
+@media screen and (max-width:600px){
+    .about{
+        padding: 60px;
+    }
+    .skills button{
+        font-size: 19px;
+        padding: 5px;
+        width: 160px; 
+    }
+
+}

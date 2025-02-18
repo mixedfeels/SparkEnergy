@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form saveData1</title>
+
+    <link rel="shortcut icon" href="/public/faviconTeste.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../../src/css/formStyle.css">
+    <link rel="stylesheet" href="../../src/css/formResponsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#"><img src="https://placehold.co/100x45/000000/FFFFFF.png" alt="logo"></a>
+    </header>
+
+    <div class="container">
+        <div class="feedback-header box-default-form">
+            <h1 >FeedBack</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="form-container">
+            <div class="container-saveData box-default-form box-structure">
+                <h3>Nosso serviço precisa de algumas informções</h3>
+
+                <hr>
+                <h4>Dados Pessoais</h4>
+
+                <div class="div-saveData">
+                    <strong class="strong-text">Nome Completo:</strong>
+                    <p data-display="nomeCompleto"></p>
+                </div>
+
+                <div class="div-saveData">
+                    <strong class="strong-text">E-mail:</strong>
+                    <p data-display="email"></p>
+                </div>
+
+                <div class="div-saveData">
+                    <strong class="strong-text">Nome Social:</strong>
+                    <p data-display="nomeSocial"></p>
+                </div>
+
+                <div class="div-saveData">
+                    <strong class="strong-text">UF:</strong>
+                    <p data-display="uf"></p>
+                </div>
+
+                <div class="div-saveData">
+                    <strong class="strong-text">Cidade:</strong>
+                    <p data-display="cidade"></p>
+                </div>
+
+                <div class="div-saveData">
+                    <strong class="strong-text">Idade:</strong>
+                    <p data-display="idade"></p>
+                </div>
+
+                <div class="div-saveData">
+                    <strong class="strong-text">Telefone:</strong>
+                    <p data-display="telefone"></p>
+                </div>
+
+                <div class="div-saveData">
+                    <strong class="strong-text">Celular:</strong>
+                    <p data-display="celular"></p>
+                </div>
+
+                <hr>
+
+                <h4>Dados para o feedback</h4>
+
+                <div class="div-saveData">
+                    <strong class="strong-text">InputRadio teste:</strong>
+                    <p data-display="inputRadio"></p>
+                </div>
+
+                <div class="div-saveData">
+                    <strong class="strong-text">InputText teste:</strong>
+                    <p data-display="inputText"></p>
+                </div>
+
+                <div class="div-saveData">
+                    <strong class="strong-text">InputSelect teste:</strong>
+                    <p data-display="inputSelect"></p>
+                </div>
+
+                <br>
+                <a href="/pages/form.html"><p>visualizar e editar</p></a>
+            </div>
+
+
+            <div class="container-feedback box-default-form box-structure">
+                   <h1>Colabore com seu feedback nós fornecendo algumas informações </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, eum unde? Quidem, est perspiciatis numquam nisi vel quas mollitia, delectus sequi ab minim</p>
+
+                <div class="margin-feedbackForm">
+                    <label id="radio-labelQuestion" class="label-question">Voce é?</label>
+                    <div class="radio-group">
+                        <input type="radio" name="radioGroupForm" id="input1" class="radio" value="exemplo1">
+                        <label for="input1" class="label-radio">Exemplo 1</label>
+                    </div>  
+                    <div class="radio-group">
+                        <input type="radio" name="radioGroupForm" id="input2" class="radio" value="exemplo2">
+                        <label for="input2" class="label-radio">Exemplo 2</label>
+                    </div>  
+                    <div class="radio-group">
+                        <input type="radio" name="radioGroupForm" id="input3" class="radio" value="exemplo3">
+                        <label for="input3" class="label-radio">Exemplo 3</label>
+                    </div>  
+                    <div class="radio-group">
+                        <input type="radio" name="radioGroupForm" id="input4" class="radio"  value="exemplo4">
+                        <label for="input4" class="label-radio">Exemplo 4</label>
+                    </div>  
+                </div>
+
+                <div class="margin-feedbackForm">
+                    <div>
+                        <label class="label-question" for="inputTextTeste">input text</label>
+                        <input id="inputTextTeste" class="input-text" type="text" placeholder="Digite alguma coisa">
+                    </div>
+
+                    <div id="alert-noText" class="alert">
+                        Esse campo é obrigatório e precisa ser preenchido corretamente.
+                    </div>
+                </div>
+                
+                <div class="margin-feedbackForm">
+                    <div>
+                        <label class="label-question" for="motivo-select">input select</label>
+                        <select name="inputSelectTeste" id="inputSelectTeste" class="input-select">
+                            <option value="" hidden="" selected disabled>Selecione uma opção</option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                        </select>
+                    </div>
+
+                    <div id="alert-noSelect" class="alert">
+                        Esse campo é obrigatório e precisa ser preenchido corretamente.
+                    </div>
+                </div>
+
+                <div class="buttons-feedback">
+
+                    <div id="private-information">
+                        <i class="fa-regular fa-eye-slash"></i>
+                        <span id="private-span"> informção privada</span>
+                    </div>
+
+                    <div class="div-buttons">
+                        <button id="voltar-btn"><i class="fa-solid fa-arrow-left"></i>  Voltar</button>
+                        <button onclick="" id="proximo-btn">Próximo passo  <i class="fa-solid fa-arrow-down"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-default-form box-structure box-noselect">
+                <h4>Conte a sua história</h4>
+                <p>Complete as etapas anteriores</p>
+            </div>
+
+            <div class="box-default-form box-structure box-noselect">
+                <h4>Anexo</h4>
+                <p>Complete as etapas anteriores</p>
+            </div>
+
+
+            <div id="publish" class="box-default-form box-structure">
+                <div class="div1-publish">
+                    <div class="div2-publish">
+                        <div class="publish-p">
+                            <p>Complete as etapas obrigatórias para postar o FeedBack.</p>
+                        </div>
+                        <div class="publish-btn">
+                            <button disabled="" >
+                                <span>Publicar FeedBack</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+
+    <script src="/src/js/formulario-scripts/saveDadoForm.js"></script>
+</body>
+</html>

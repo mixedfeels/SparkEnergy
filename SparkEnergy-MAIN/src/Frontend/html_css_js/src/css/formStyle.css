@@ -1,0 +1,420 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eaedf0;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+}
+
+:root {
+    --div-background: white;
+    --div-radius: 8px;
+    --div-colorshadow: rgba(0, 0, 0, 0.212);
+}
+
+/* ============================== Header ============================== */
+header {
+    background-color: #FFEE32;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+}
+/* ===========================================================================*/
+
+.container {
+    width: 100%;
+    margin-top: 70px;
+}
+
+/* ============================== Classes / Sets ============================== */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px 0px 8px;
+}
+
+.box-default-form {
+    background-color: var(--div-background);
+    border-radius: var(--div-radius);
+    box-shadow: 0px 0px 15px var(--div-colorshadow);
+}
+
+.input-text {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    padding: 16px;
+    font-weight: 400;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: black;
+}
+
+.input-select {
+    border: 1px solid rgb(225, 227, 229);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+.label-question {
+    color: rgb(0, 0, 0);
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+/* ===========================================================================*/
+
+
+
+/* ============================== Box Title(Feeback) ==============================*/
+.feedback-header{
+    margin: 17px 16px 35px 16px;
+    padding: 20px;
+    text-align: center;
+}
+/* ===========================================================================*/
+
+
+
+/* ============================== Stucture Form ==============================*/
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-structure {
+    margin: 0px 18px 48px 16px;
+    padding: 48px;
+    max-width: 704px;
+    width: 100%;
+    color: rgb(75, 89, 99);
+    font-weight: 300;
+}
+/* =========================================================================== */
+
+
+/* ============================== Personal data form ==============================*/
+.container-personalData {
+    text-align: center;
+}
+
+.container-personalData p {
+    margin-bottom: 13px;
+}
+
+.box-personalData{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box-personalData label, .box-personalData2 label {
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+.form-personalData {
+    margin-bottom: 10px;
+}
+
+.form-personalData input, select{
+    border-radius: 8px;
+    border: 1px solid rgb(163, 163, 163);
+    padding: 6px 7px;
+    background-color: white;
+}
+
+.box-personalData2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#div-uf {
+    margin-right: 15px; 
+}
+#div-cidade {
+    width: 150px;
+    margin-right: 15px; 
+}
+#div-cidade input {
+    width: 100%;
+}
+.inputTel {
+    width: 120px;
+    margin-right: 15px; 
+}
+.inputTel input {
+    width: 100%;
+}
+#div-cel {
+    margin-right: 0;
+}
+
+#div-idade {
+    width: 70px;
+    margin-right: 15px; 
+}
+#div-idade input{
+    text-align: center;
+}
+#div-idade span {
+    color: red;
+    font-size: 10px;
+}
+
+/* =========================================================================== */
+
+/* ============================== saveData form ==============================*/
+
+.container-saveData h3{
+    color: rgb(146, 146, 1);
+}
+
+.div-saveData {
+    margin: 15px 0;
+    padding: 0 20px;
+}
+
+.div-saveData p {
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+/* ============================== FeedBack form ==============================*/
+.margin-feedbackForm {
+    margin: 24px 2px;
+}
+
+.container-feedback h1 {
+    font-weight: 300;
+    text-align: center;
+}
+.container-feedback p {
+    text-align: center;
+    margin: 27px 0px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(75, 89, 99);
+}
+
+    /* ============================== Radio ==============================*/
+#radio-labelQuestion {
+    padding-left: 7px;
+}
+
+.label-radio {
+    font-size: 16px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.radio-group {
+    margin-top: 17px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    z-index: 1;
+}
+.radio {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.radio:before {
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: rgb(31, 105, 193);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all .6s ease-in-out;
+}
+.radio:checked:before {
+    opacity: 1;
+    
+}
+.radio:checked {
+    border: 1px solid rgb(31, 105, 193);
+}
+    /* ====================================================================*/
+
+
+#inputSelectTeste {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    padding: 16px;
+    font-weight: 400;
+    color: rgb(75, 89, 99);
+    border-color: black;
+}
+
+.alert {
+    background-color: #ff000025;
+    color: rgb(160, 0, 0);
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin-top: 8px;
+    display: none;
+}
+
+#private-span {
+    margin-right: auto;
+    color: #0067ac;
+}
+
+.div-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.buttons-feedback {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    align-items: center;
+    gap: 140px;
+}
+#voltar-btn {
+    border: none;
+    background-color: white;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+#voltar-btn:active{
+    cursor: grabbing;
+}
+
+#proximo-btn {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    background-color: #FFEE32;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+#proximo-btn i {
+    font-size: 12px;
+}
+#proximo-btn:hover {
+    background-color: #e6d51f;
+}
+#proximo-btn:active {
+    cursor: grabbing;
+}
+
+/* =================================================================================== */
+
+.box-noselect {
+    width: 90%;
+    padding: 23px;
+    margin-bottom: 20px;
+}
+
+.box-noselect h4{
+    color: rgb(169, 176, 181);
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 21px;
+}
+
+.box-noselect p{
+    color: rgb(169, 176, 181);
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+#publish {
+    padding: 48px;
+    width: 90%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.div1-publish {
+    display: flex;
+    justify-content: space-evenly;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+.div2-publish {
+    padding: 0px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.publish-p {
+    padding: 0px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.publish-btn {
+    padding: 0px 20px;
+    margin-right: 0px;
+    gap: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#publish p {
+    width: 231px;
+    margin-bottom: 6px;
+    color: rgb(143, 180, 20);
+    font-size: 18px;
+   font-weight: 600;
+}
+
+#publish button {
+    min-width: 72px;
+    width: 100%;
+    padding: 0px 8px;
+    color: rgb(169, 176, 181);
+    background-color: rgb(249, 249, 249);
+    cursor: not-allowed;
+    height: 64px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+
+footer {
+    background-color: rgb(255, 255, 0);
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    padding: 20px 0;
+}
