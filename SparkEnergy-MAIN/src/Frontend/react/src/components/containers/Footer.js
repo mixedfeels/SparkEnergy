@@ -159,7 +159,7 @@ function Footer() {
 
       <SocialIcons>
         <IconLink
-          href="https://github.com/2024-2-MCC2/Projeto10"
+          href="https://github.com/mixedfeels/siteEmReact"
           target="_blank"
           rel="noopener noreferrer"
         >
