@@ -6,10 +6,6 @@
 &emsp; :green_circle: API: https://sparkenergy-api.onrender.com<br/>
 &emsp; :green_circle:  Banco de Dados no Microsoft Azure<br/><br/>
 
-## <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma Logo" width="24" height="24" style="vertical-align: middle; margin-right: 10px;"> Figma
-
--<a href="https://www.figma.com/design/vBXU3GXwaO11UcjoACbnU4/PI---SparkEnergy"> Protópico do Projeto</a><br/><br/>
-
 ## 🛠 Estrutura de pastas
 
 /Raiz<br>
