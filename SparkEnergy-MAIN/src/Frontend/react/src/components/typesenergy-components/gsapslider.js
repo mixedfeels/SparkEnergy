@@ -100,21 +100,20 @@ const Slider = () => {
 
   useEffect(() => {
     const imagens = imagensRef.current;
-    const raio = 242; 
+    const raio = 242;
     const animar = () => {
-      if (imagens.length === 0) return; 
+      if (imagens.length === 0) return;
       imagens.forEach((imagem, index) => {
         if (imagem) {
-          
+
           const angulo = index / imagens.length - progresso.current.value;
           const x = -Math.sin(angulo * Math.PI * 2) * raio;
           const y = Math.cos(angulo * Math.PI * 2) * raio;
           gsap.to(imagem, {
             duration: 2,
             ease: "power4.out",
-            transform: `translate3d(${x}px, 0px, ${y - 5}px) rotateY(${
-              360 * -angulo
-            }deg)`,
+            transform: `translate3d(${x}px, 0px, ${y - 5}px) rotateY(${360 * -angulo
+              }deg)`,
             background: `hsla(${Math.floor(
               (index / imagens.length) * 360
             )}, 90%, 50%, 0.5)`,
@@ -205,7 +204,7 @@ const Slider = () => {
               key={index}
               className="carousel-image"
               ref={(el) => {
-                if (el) imagensRef.current[index] = el; 
+                if (el) imagensRef.current[index] = el;
               }}
             >
               <EnergyBox
