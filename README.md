@@ -8,7 +8,7 @@
 
 ## ODS 7: Energia limpa e acessível
 
-## Integrantes: <a href="https://github.com/ArthurRFerr">Arthur Rodrigues Ferreira</a>, <a href="https://github.com/BernardoSCavalc">Bernardo Seijas Cavalcante</a>, <a href="https://github.com/gabmarussi">Gabriel Henrique Coelho Marussi</a>, <a href="https://github.com/IsraelRibeiro05">Israel Ribeiro Ramos</a>, <a href="https://github.com/ViniSantos09">Vinicius dos Santos Ribeiro</a>
+## Integrantes: <a href="https://github.com/ArthurRFerr">Arthur Rodrigues Ferreira</a>, <a href="https://github.com/BernardoSCavalc">Bernardo Seijas Cavalcante</a>, <a href="https://github.com/gabmarussi">Gabriel Henrique Coelho Marussi</a>, <a href="https://github.com/mixedfeels">Israel Ribeiro Ramos</a>, <a href="https://github.com/ViniSantos09">Vinicius dos Santos Ribeiro</a>
 
 ## Professores Orientadores: <a href="https://www.linkedin.com/in/dolemes/">David de Oliveira Lemes</a>, <a href="https://www.linkedin.com/in/francisco-escobar/">Francisco de Souza Escobaro</a>, <a href="https://github.com/2024-2-MCC2/Projeto10">Katia Milani Lara Bossi</a>, <a href="https://github.com/2024-2-MCC2/Projeto10">Renata Muniz do Nascimento</a>, <a href="https://www.linkedin.com/in/victorbarq/">Victor Rosetti Quiroz</a>
 
