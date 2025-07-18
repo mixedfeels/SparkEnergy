@@ -2,12 +2,6 @@
 
 ## Descrição
 
-<p align="center">
-<img src="imagens/SparkEnergy (Sem Fundo).png" alt="SparkEnergy" border="0">
-  Image by <a href="https://github.com/2024-2-MCC2/Projeto10">SparkEnergy</a> <a rel="license" href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1">CC BY-SA 4.0</a>
-</p>
-
-
 A SparkEnergy visa promover o acesso universal, confiável e acessível à energia, ouvindo as comunidades sobre suas dificuldades. Alinhando-se ao Objetivo 7.1 da ODS 7 da ONU: 'Garantir o acesso universal, confiável, moderno e a preços acessíveis a serviços de energia. Na SparkEnergy, a conexão vai além da internet, buscando unir pessoas, ideias e soluções para problemas de acesso à energia. O espaço incentiva a troca de experiências, denúncias e sugestões, criando uma rede de apoio entre moradores de diferentes bairros e ajudando a mapear a realidade energética das comunidades.
 
 A solidariedade impulsiona a SparkEnergy, criando um ambiente onde as pessoas podem se apoiar mutuamente. Ao compartilhar experiências e sugestões, cada um contribui para a comunidade e para um movimento global que busca garantir o acesso à energia limpa e acessível. Juntos, podemos construir um futuro mais justo para todos.<br/><br/>
